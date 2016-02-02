@@ -32,6 +32,26 @@
 		}
 	}
 
+	#block-menu-menu-footer-menu 
+	{	
+		ul.menu
+		{
+			overflow:hidden;
+		}
+
+		li
+		{
+			float: left;
+			display: block;
+		}
+
+		& > .content li a
+		{
+			padding:0px 6px;
+		}
+		
+	}
+
 	#page-wrapper
 	{
 		overflow:hidden;
@@ -344,6 +364,12 @@
 				background: url(../images/icons/right-arrow-orange.png) no-repeat right 15px;
 			}
 		}
+	}
+
+	#block-system-main .view-program-services 
+	{
+		max-width: 655px;
+		margin: 0 auto;
 	}
 }
 

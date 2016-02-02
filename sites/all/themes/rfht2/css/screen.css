@@ -1230,6 +1230,14 @@ h3 {
     #block-block-1 ul li a > span span {
       font-size: 52px; }
 
+  #block-menu-menu-footer-menu ul.menu {
+    overflow: hidden; }
+  #block-menu-menu-footer-menu li {
+    float: left;
+    display: block; }
+  #block-menu-menu-footer-menu > .content li a {
+    padding: 0px 6px; }
+
   #page-wrapper {
     overflow: hidden; }
 
@@ -1369,7 +1377,11 @@ h3 {
         background: url(../images/icons/left-arrow-orange.png) no-repeat left 15px; }
       #services-nav a.next {
         float: left;
-        background: url(../images/icons/right-arrow-orange.png) no-repeat right 15px; } }
+        background: url(../images/icons/right-arrow-orange.png) no-repeat right 15px; }
+
+  #block-system-main .view-program-services {
+    max-width: 655px;
+    margin: 0 auto; } }
 @media screen and (max-width: 767px) {
   #block-views-program-services-block-1 {
     display: none; }
