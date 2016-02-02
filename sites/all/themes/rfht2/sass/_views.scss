@@ -1,0 +1,618 @@
+
+.view-program-services,
+.view-program-services-listing
+{	
+	.views-row
+	{
+		background:$green;
+		float: left;
+		margin:20px 20px 0px 0px;
+		text-align: center;
+		border-radius:5px;
+
+		&:hover
+		{
+			background: #693a77;
+		}
+
+		.field-content > div
+		{
+			display: table;
+			height: 190px;
+		}
+
+		a
+		{
+			display: table-cell;
+			padding: 0px 20px;
+			vertical-align: middle;
+			width: 160px;
+			color:white;
+			font-size: 22px;
+			text-decoration:none;
+
+			span:first-child
+			{
+				padding-top:0px;
+			}
+
+			span
+			{
+				display: block;
+				padding-top: 20px;
+			}
+		}
+	}
+
+	.views-row:last-child
+	{
+		margin-right: 0px;
+	}
+
+}
+
+
+#block-views-program-services-block-1
+{	
+	.view-program-services
+	{
+		.views-row 
+		{	
+			margin: 0px ;
+			width: 14.28%;
+			border-radius:0px;
+			.field-content > div
+			{
+				width:100%;
+			}
+			
+			a
+			{
+				border-right:1px solid white;
+			}
+
+			&:last-child a
+			{
+				border-right:0px;
+			}
+		}
+	}
+}
+
+.view-program-services-listing
+{	
+	.views-row
+	{	
+		height: 450px;
+		width: 450px;
+		background: white;
+		border-radius: 10px;
+		overflow: hidden;
+		box-shadow: 1px -1px 1px rgba(0,0,0,0.1);
+
+		img
+		{
+			width: 450px;
+		}
+
+		a
+		{
+			padding:0px;
+		}
+
+		&:hover .field-content div> span
+		{
+			background: rgba(105, 58, 119, 0.8);
+		}
+
+		&:hover
+		{
+			background:none;
+		}
+
+		.field-content div> span
+		{
+			position: absolute;
+			z-index: 9999;
+			color: white;
+			top: 0;
+			text-align: left;
+			padding:0px 30px;
+			background: rgba(230, 129, 29, 0.8);
+			border-radius: 0px 5px 5px 0px;
+			display: inline-block;
+			top: 34%;
+			left: 0px;
+			min-width: 230px;
+			height: 140px;
+			font-size: 68px;
+			display: block;
+			padding-top:20px;
+			line-height: 0.7em;
+		}
+
+		.first-word
+		{
+			font-size: 32px;
+			display: block;
+		}
+
+		.single-word
+		{
+			padding-top:50px;
+			display: block;
+		}
+		
+	}
+		
+}
+
+
+#block-views-program-services-detail-block
+{	
+	-webkit-transition:height 0.7s;
+	-moz-transition:height 0.7s;
+}
+
+#block-views-program-services-detail-block.open
+{
+	height:auto;
+	-webkit-transition:height 0.7s;
+	-moz-transition:height 0.7s;
+}
+
+.view-program-services-listing.close
+{
+	height:0px;
+	-webkit-transition:height 2s;
+}
+
+
+
+
+#content .view-program-services,
+.view-program-services-listing,
+.view-program-sub-category
+{	
+	overflow:hidden;
+	.views-row
+	{
+		background:$green;
+		display: inline-block;
+		float: none;
+		margin:20px 15px 0px 0px;
+		text-align: center;
+		border-radius:5px;
+
+		&:hover
+		{
+			background: #693a77;
+		}
+
+		.field-content > div
+		{
+			display: table;
+			height: 190px;
+		}
+
+		a
+		{
+			display: table-cell;
+			padding: 0px 20px;
+			vertical-align: middle;
+			width: 160px;
+			color:white;
+			font-size: 22px;
+			text-decoration:none;
+
+			span
+			{
+				display: block;
+				padding-top: 20px;
+			}
+		}
+	}
+
+	.views-row:last-child
+	{
+		margin-right: 0px;
+	}
+
+}
+
+.view-program-sub-category .views-row
+{
+	float:left;
+	display:block;
+}
+
+#block-views-program-services-block-1 .views-row
+{
+	&.active
+	{
+		background:rgba(105, 58, 119, 1);
+
+		&:after
+		{	
+			position:absolute;
+			content: "";
+			border-style:solid;
+			border-width:15px 15px 15px 15px;
+			border-color:rgba(105, 58, 119, 1) transparent transparent transparent;
+			bottom:-30px;
+			left:50%;
+			transform: translateX(-50%);
+			-moz-transform: translateX(-50%);
+			-webkit-transform: translateX(-50%);
+ 		}
+	}
+}
+
+
+#block-views-program-services-block-1
+{	
+	.view-program-services
+	{
+		.views-row 
+		{	
+			margin: 0px ;
+			width: 12.5%;
+			border-radius:0px;
+
+			.field-content > div
+			{
+				width:100%;
+			}
+			
+			a
+			{
+				border-right:1px solid white;
+				padding:0 5px;
+			}
+
+			&:last-child a
+			{
+				border-right:0px;
+			}
+		}
+	}
+}
+
+.view-program-services-listing,
+.view-program-sub-category 
+{	
+	.view-content
+	{
+		text-align:center;
+	}
+
+	.views-row
+	{	
+		max-width: 450px;
+		background: white;
+		border-radius: 10px;
+		overflow: hidden;
+		box-shadow: 1px -1px 1px rgba(0,0,0,0.1);
+
+		img
+		{
+			width:100%;
+			margin:0px;
+			min-width: 448px;
+		}
+
+		a
+		{
+			padding:0px;
+			width: auto;
+			margin-bottom: -5px;
+			display: block;
+		}
+
+		&:hover .field-content div> span
+		{
+			background: rgba(105, 58, 119, 0.8);
+		}
+
+		&:hover
+		{
+			background:none;
+		}
+
+		.field-content div> span
+		{
+			position: absolute;
+			z-index: 9999;
+			color: white;
+			top: 0;
+			text-align: left;
+			padding:30px 30px;
+			background: rgba(230, 129, 29, 0.8);
+			border-radius: 0px 5px 5px 0px;
+			display: inline-block;
+			top: 50%;
+			transform: translateY(-50%);
+			-moz-transform:translateY(-50%);
+			-webkit-transform: translateY(-50%);
+			left: 0px;
+			width: 230px;
+			//min-height: 140px;
+			font-size: 68px;
+			display: block;
+			line-height: 1em;
+		}
+
+		.first-word
+		{
+			font-size: 32px;
+			display: block;
+			padding-top:0px;
+			line-height: 1em;
+		}
+
+		.single-word
+		{
+			padding-top:50px;
+			display: block;
+		}
+		
+	}
+		
+}
+
+
+#block-views-program-services-detail-block
+{	
+	height:0px;
+	-webkit-transition:height 0.7s;
+	-moz-transition:height 0.7s;
+}
+
+#block-views-program-services-detail-block.open
+{
+	height:auto;
+	-webkit-transition:height 0.7s;
+	-moz-transition:height 0.7s;
+}
+
+.view-program-sub-category.close
+{
+	height:0px;
+	-webkit-transition:height 2s;
+}
+
+
+
+.view-our-team,
+.view-physicians,
+.view-accepting-new-patients
+{
+	 .views-row
+	 {
+	 	border-bottom: 1px solid #cdcdcd;
+	 	padding-bottom: 10px;
+	 	margin-bottom: 10px;
+	 	overflow:hidden;
+
+	 	.views-field-title
+	 	{
+	 		background: url(../images/icons/polygon-down-icon.png) no-repeat right center;
+	 		cursor: pointer;
+	 	}
+
+	 	.views-field-title.open,
+	 	h3.open
+ 	 	{
+	 		background: url(../images/icons/polygon-up-icon.png) no-repeat right center;
+	 	}
+	 }
+
+	 .views-field-body-1.close
+	 {
+	 	display: none;
+	 }
+
+
+	 .views-field-body.open
+	 {
+	 	height: auto;
+	 }
+}
+
+.view-our-team
+{
+	.views-field-body
+	{
+		display: none;
+		overflow:hidden;
+	}
+}
+
+.page-node-14
+{
+	h2
+	{
+		border-bottom:1px solid #cdcdcd;
+		padding-bottom:20px;
+	}
+
+	#block-block-1 h2
+	{
+		border-bottom: 0px;
+	}
+}
+
+.view-accepting-new-patients
+{
+	margin-bottom:50px;
+}
+	
+.view-physicians,
+.view-accepting-new-patients
+{	
+	.views-field-body
+	{
+		display: none;
+		overflow:hidden;
+		padding-top:10px;
+	}
+
+	.map
+	{	
+		border-radius:10px;
+	}
+
+	.views-field-field-latitude,
+	.views-field-field-longitude
+	{
+		display: none;
+	}
+
+	h3
+	{	
+		padding-bottom: 0px !important;
+		background: url(../images/icons/polygon-down-icon.png) no-repeat right center;
+ 		cursor: pointer;
+	}
+
+ 	p
+ 	{
+ 		color:#9b9b9b;
+ 	}
+
+ 	h3.open	 	
+ 	{
+ 		background: url(../images/icons/polygon-up-icon.png) no-repeat right center;
+ 	}
+
+	.name-map
+	{
+		float: left;
+		width: 50%;
+
+		iframe
+		{
+			width:100%!important;
+			height: 300px;
+		}
+	}
+
+	.phy-details
+	{
+		float: right;
+		width:48%;
+	}
+}
+
+
+#block-views-program-services-block-1.menu-fixed
+{
+	position: fixed;
+	width: 100%;
+	top:0px;
+
+	.view-program-services .views-row a span
+	{
+		padding-top: 0px;
+	}
+	
+	.view-program-services .views-row .field-content > div
+	{
+		height: 140px;
+	}
+}
+
+
+.view-our-partners
+{	
+	.view-content
+	{
+		text-align:center;
+	}
+
+	.views-row
+	{
+		display: inline-block;
+		padding: 0 30px 50px 0;
+		text-align: center;
+		width: 200px;
+
+		img
+		{
+			border-radius:0px;
+		}
+	}
+
+	img 
+	{
+	  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
+	  filter: gray; /* IE6-9 */
+	  -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+	}
+
+	img:hover 
+	{
+	  filter: none;
+	  -webkit-filter: grayscale(0%);
+	}
+}
+
+
+#services-nav
+{	
+	position: absolute;
+	top:30px;
+	right:0px;
+	overflow:hidden;
+
+	a span
+	{
+		font-size: 16px;
+	}
+	a
+	{
+		font-size:24px;
+		line-height: 1em;
+		padding-bottom:10px;
+		max-width: 150px;
+	}
+
+	a.next
+	{
+		right:0px;
+		float: right;
+		text-align: left;
+		display: inline-block;
+		padding-left:20px;
+		padding-right:25px;
+		background:url(../images/icons/right-arrow-orange.png) no-repeat right 21px;
+	}
+
+	a.prev
+	{	
+		right:125px;
+		text-align: right;
+		float: left;
+		display: inline-block;
+		padding-right: 20px;
+		border-right: 1px solid #ccc;
+		display: inline-block;
+		padding-left:25px;
+		background:url(../images/icons/left-arrow-orange.png) no-repeat left 21px;
+
+	}
+}
+
+.view-health-care-providers
+{
+	.views-field-field-logo
+	{
+		width: 200px;
+		float: left;
+	}
+
+	.views-field-body
+	{
+		padding-top: 40px;
+	}
+}

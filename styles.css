@@ -1,0 +1,33 @@
+body
+{
+	margin:0px;
+}
+
+div
+{
+	text-align: center;
+}
+
+#mainBox
+{
+	position: relative;
+	max-width: 1220px;
+	margin: 0 auto;
+}
+#dropdown
+{	
+	display: none;
+	z-index: 9999;
+	width: 199px;
+	height: 265px;
+	position: absolute;
+	top: 170px;
+	left: 135px;
+	color:transparent;
+	border-top: 5px solid #e5821d;
+}
+
+#dropdown-menu:hover #dropdown
+{
+	display: block;
+}

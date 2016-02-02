@@ -1,0 +1,28 @@
+name = Rapids Family Health Team
+description = Rapids Family Health Team Custom
+core = 7.x
+
+scripts[] = js/slick/slick.js
+scripts[] = js/background-size.js
+scripts[] = js/icons.js
+scripts[] = js/services-slider.js
+scripts[] = js/font-size.js
+scripts[] = js/map.js
+scripts[] = js/script.js
+scripts[] = js/mobile.js
+
+
+stylesheets[all][] = js/slick/slick.css
+stylesheets[all][] = stylesheets/screen.css
+stylesheets[all][] = css/screen.css
+
+
+regions[navigation] = Navigation
+regions[header] = Header
+regions[Banner] = Banner
+regions[help] = Help
+regions[content] = Content
+regions[sidebar] = Sidebar
+regions[action-blocks] = Action Blocks
+regions[footer] = Footer
+
