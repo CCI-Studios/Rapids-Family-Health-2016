@@ -47,6 +47,8 @@
 <head>
   <?php print $head; ?>
   <meta name="viewport" content="width=device-width, user-scalable=no">
+    <!--[if IE 9]> <html class="lt-ie10" lang="en"> <![endif]-->
+
   <title><?php print $head_title; ?></title>
   <script src="https://use.typekit.net/mrk7lsh.js"></script>
   <script>try{Typekit.load({ async: true });}catch(e){}</script>

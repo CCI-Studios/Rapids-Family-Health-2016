@@ -20,13 +20,16 @@
 		}
 	}
 	
+	if (!function_exists('removeUrlSpace')) {
 	function removeUrlSpace($string) {
 	    //Lower case everything
 	    $string = strtolower($string);
 	    //Convert whitespaces and underscore to dash
 	    $string = preg_replace("/[\s_]/", "-", $string);
+	    $string=str_replace('with-','',$string);
 	    return $string;
 	}
+}
 	$max=count($subcategory_nodes);
 	
 	$currentTitle=removeUrlSpace($node->title);
@@ -56,10 +59,10 @@
 	<div id="services-nav">
 		
 		<?php if($index>0) { ?>
-		<a href="/<?php echo removeUrlSpace($term_name);?>/<?php echo $prev ?>" class="prev"><span>Previous</span><br><?php echo $str_prev ?></a>
+		<a href="/program-services/<?php echo removeUrlSpace($term_name);?>/<?php echo $prev ?>" class="prev"><span>Previous</span><br><?php echo $str_prev ?></a>
 		<?php }?>
 		<?php if($index<$max-1){?>
-		<a href="/<?php echo  removeUrlSpace($term_name);?>/<?php echo $next ?>" class="next"><span>Next</span><br><?php echo $str_next ?></a>
+		<a href="/program-services/<?php echo  removeUrlSpace($term_name);?>/<?php echo $next ?>" class="next"><span>Next</span><br><?php echo $str_next ?></a>
 		<?php }?>
 	</div>
 	<?php }?>

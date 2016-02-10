@@ -80,6 +80,8 @@ h3 {
   #content h2 {
     color: #477f80;
     font-size: 2.5em; }
+  #content h2.orange-color {
+    color: #e6811d; }
   #content h3 {
     padding-bottom: 10px; }
   #content h3,
@@ -134,7 +136,7 @@ h3 {
   background-position-x: 78%;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
   position: relative;
-  z-index: 9999999; }
+  z-index: 99; }
 
 #block-system-main-menu,
 #logo,
@@ -157,6 +159,9 @@ h3 {
 #header > div li,
 #block-menu-menu-footer-menu > .content li {
   list-style: none; }
+  #header > div li #program-services-mb,
+  #block-menu-menu-footer-menu > .content li #program-services-mb {
+    display: none; }
   #header > div li a,
   #block-menu-menu-footer-menu > .content li a {
     text-decoration: none;
@@ -273,6 +278,9 @@ h3 {
   #block-system-main-menu #menu-contact:before,
   #block-menu-menu-footer-menu #menu-contact:before {
     content: url("../images/icons/phone-icon.png"); }
+  #block-system-main-menu #program-services-mb:before,
+  #block-menu-menu-footer-menu #program-services-mb:before {
+    content: url("../images/icons/program-icon-small.png"); }
 
 .front #content {
   display: none; }
@@ -287,6 +295,7 @@ h3 {
   padding: 50px 100px;
   position: absolute;
   top: 50%;
+  top: 20% \9;
   transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
@@ -620,7 +629,8 @@ h3 {
     padding: 5px;
     margin-top: 20px;
     background: #e6811d;
-    -webkit-appearance: none; }
+    -webkit-appearance: none;
+    cursor: pointer; }
   .webform-client-form-8 input,
   .webform-client-form input {
     width: 278px;
@@ -829,6 +839,9 @@ h3 {
     display: inline-block;
     margin: 20px; }
 
+.node-program-services .field-name-field-category {
+  display: none; }
+
 .view-program-services .views-row,
 .view-program-services-listing .views-row {
   background: #477f80;
@@ -874,6 +887,8 @@ h3 {
   #block-views-program-services-block-1 .view-program-services .views-row:last-child a {
     border-right: 0px; }
 
+.view-program-services-listing .view-content {
+  text-align: center; }
 .view-program-services-listing .views-row {
   height: 450px;
   width: 450px;
@@ -964,14 +979,6 @@ h3 {
       .view-program-sub-category .views-row a span {
         display: block;
         padding-top: 20px; }
-  #content .view-program-services .views-row:last-child,
-  .view-program-services-listing .views-row:last-child,
-  .view-program-sub-category .views-row:last-child {
-    margin-right: 0px; }
-
-.view-program-sub-category .views-row {
-  float: left;
-  display: block; }
 
 #block-views-program-services-block-1 .views-row.active {
   background: #693a77; }
@@ -999,9 +1006,6 @@ h3 {
   #block-views-program-services-block-1 .view-program-services .views-row:last-child a {
     border-right: 0px; }
 
-.view-program-services-listing .view-content,
-.view-program-sub-category .view-content {
-  text-align: center; }
 .view-program-services-listing .views-row,
 .view-program-sub-category .views-row {
   max-width: 450px;
@@ -1029,7 +1033,7 @@ h3 {
   .view-program-services-listing .views-row .field-content div > span,
   .view-program-sub-category .views-row .field-content div > span {
     position: absolute;
-    z-index: 9999;
+    z-index: 9;
     color: white;
     top: 0;
     text-align: left;
@@ -1038,6 +1042,7 @@ h3 {
     border-radius: 0px 5px 5px 0px;
     display: inline-block;
     top: 50%;
+    top: 30% \9;
     transform: translateY(-50%);
     -moz-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
@@ -1209,11 +1214,21 @@ h3 {
     padding-left: 25px;
     background: url(../images/icons/left-arrow-orange.png) no-repeat left 21px; }
 
-.view-health-care-providers .views-field-field-logo {
+.view-health-care-providers .views-field-field-logo,
+.view-health-care-providers .views-field-field-logo-pt-resources,
+.view-patient-resources .views-field-field-logo,
+.view-patient-resources .views-field-field-logo-pt-resources {
   width: 200px;
   float: left; }
-.view-health-care-providers .views-field-body {
+.view-health-care-providers .views-row,
+.view-patient-resources .views-row {
+  overflow: hidden; }
+.view-health-care-providers .views-field-body,
+.view-patient-resources .views-field-body {
   padding-top: 40px; }
+
+.views-field-body-1.hide {
+  display: none; }
 
 @media screen and (max-width: 1060px) {
   #block-block-1 #featured-block a > span:before,
@@ -1278,9 +1293,10 @@ h3 {
       display: block;
       border-bottom: 1px solid #83b3b2; }
     #block-system-main-menu li.expanded:hover ul.menu {
-      position: relative; }
+      position: relative;
+      display: none; }
     #block-system-main-menu li.expanded ul.menu {
-      display: block;
+      display: none;
       background: #5a9a98; }
       #block-system-main-menu li.expanded ul.menu li {
         border-bottom: 0px; }
@@ -1364,7 +1380,10 @@ h3 {
     margin: 20px auto;
     max-width: 450px; }
     .view-program-sub-category .views-row:last-child {
-      margin-right: auto; } }
+      margin-right: auto; }
+
+  #header > div li #program-services-mb {
+    display: block; } }
 @media screen and (max-width: 920px) {
   #services-nav {
     position: relative;
@@ -1381,7 +1400,10 @@ h3 {
 
   #block-system-main .view-program-services {
     max-width: 655px;
-    margin: 0 auto; } }
+    margin: 0 auto; }
+
+  .map iframe {
+    pointer-events: none; } }
 @media screen and (max-width: 767px) {
   #block-views-program-services-block-1 {
     display: none; }

@@ -81,6 +81,11 @@
 
 .view-program-services-listing
 {	
+	.view-content
+	{
+		text-align: center;
+	}
+
 	.views-row
 	{	
 		height: 450px;
@@ -213,17 +218,6 @@
 		}
 	}
 
-	.views-row:last-child
-	{
-		margin-right: 0px;
-	}
-
-}
-
-.view-program-sub-category .views-row
-{
-	float:left;
-	display:block;
 }
 
 #block-views-program-services-block-1 .views-row
@@ -281,11 +275,7 @@
 .view-program-services-listing,
 .view-program-sub-category 
 {	
-	.view-content
-	{
-		text-align:center;
-	}
-
+	
 	.views-row
 	{	
 		max-width: 450px;
@@ -322,7 +312,7 @@
 		.field-content div> span
 		{
 			position: absolute;
-			z-index: 9999;
+			z-index: 9;
 			color: white;
 			top: 0;
 			text-align: left;
@@ -331,12 +321,12 @@
 			border-radius: 0px 5px 5px 0px;
 			display: inline-block;
 			top: 50%;
+			top:30%\9;
 			transform: translateY(-50%);
 			-moz-transform:translateY(-50%);
 			-webkit-transform: translateY(-50%);
 			left: 0px;
 			width: 230px;
-			//min-height: 140px;
 			font-size: 68px;
 			display: block;
 			line-height: 1em;
@@ -603,16 +593,29 @@
 	}
 }
 
-.view-health-care-providers
+.view-health-care-providers,
+.view-patient-resources
 {
-	.views-field-field-logo
+	.views-field-field-logo,
+	.views-field-field-logo-pt-resources
 	{
 		width: 200px;
 		float: left;
+	}
+
+	.views-row
+	{
+		overflow: hidden;
 	}
 
 	.views-field-body
 	{
 		padding-top: 40px;
 	}
+}
+
+
+.views-field-body-1.hide
+{
+	display:none;
 }

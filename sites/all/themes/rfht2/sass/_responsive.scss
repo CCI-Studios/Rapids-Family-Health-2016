@@ -153,11 +153,12 @@
 			&:hover ul.menu
 			{
 				position: relative;
+				display: none;
 			}
 
 			ul.menu
-			{
-				display: block;
+			{	
+				display: none;
 				background:$seagreen;
 
 				li
@@ -335,6 +336,13 @@
 		}
 	}
 
+	#header > div li
+	{
+		#program-services-mb
+		{
+			display: block;
+		}
+	}
 	
 
 }
@@ -371,6 +379,11 @@
 		max-width: 655px;
 		margin: 0 auto;
 	}
+
+	.map iframe
+	{
+		pointer-events: none;
+	}
 }
 
 
@@ -380,6 +393,7 @@
 	{
 		display: none;
 	}
+
 
 	#block-block-1
 	{	
@@ -501,6 +515,7 @@
 			text-align: left;
 		}
 	}
+
 }
 
 

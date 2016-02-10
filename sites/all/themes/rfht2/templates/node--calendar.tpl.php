@@ -95,6 +95,6 @@
 
 		?>
 		<!-- <a href="/<?php echo $form2?>" class="button">Registration</a> -->
-		<a href="/<?php echo $category?>/<?php echo $sub_category ?>" class="button">Program Details</a></div>
+		<a href="/program-services/<?php echo $category?>/<?php echo $sub_category ?>" class="button">Program Details</a></div>
 
 	</div>
