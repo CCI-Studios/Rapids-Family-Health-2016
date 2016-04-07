@@ -1,22 +1,27 @@
 
 @media screen and (max-width:1060px)
 {
-    #block-block-1
+    #action-blocks
 	{	
-		#featured-block a > span:before,
-		#program-block a > span:before,
-		#events-block a > span:before
-		{
-			background-size:75px;
-			margin-top: 10px;
+
+		#block-imageblock-1,
+		#block-imageblock-2,
+		#block-imageblock-3
+		{	
+			.content a > span:before
+			{
+				background-size:60px;
+				margin-top: 10px;
+			}
+			
 		}
 
-		#program-block a > span:before
+		#block-imageblock-2 .content a > span:before
 		{
 			padding-right: 8px;
 		}
 
-		ul li a > span 
+		.block-imageblock .block-body a > span 
 		{
 			min-width: 240px;
 
@@ -112,6 +117,12 @@
 		}
 	}
 
+	#text-resize
+	{
+		top: auto;
+		bottom: -50px;
+	}
+
 	#block-system-main-menu
 	{
 		display: none;
@@ -176,25 +187,33 @@
 		}
 	}
 
- 	#block-block-1
+ 	#action-blocks
 	{	
 
-		height: 320px;
+		height: auto;
 
-		#featured-block a > span:before,
-		#program-block a > span:before,
-		#events-block a > span:before
+		.backbg
 		{
-			background-size:55px;
-			height: 60px;
+			height: auto;
+		}
+		
+		.block-imageblock
+		{	
+			height: 320px;
+			.block-body a > span:before
+			{
+				background-size:55px;
+				height: 70px;
+			}
+			
 		}
 
-		ul li
+		.block-imageblock
 		{
 			border-bottom:2px solid white;
 		}
 
-		ul li a > span 
+		.block-imageblock .block-body a > span 
 		{
 			min-width: 204px;
 			padding: 20px 10px;
@@ -212,7 +231,7 @@
 		
 		}
 
-		#program-block a > span:before
+		#block-imageblock-2 .block-body a > span:before
 		{
 			padding-right: 8px;
 			width: 60px;
@@ -394,19 +413,34 @@
 		display: none;
 	}
 
+	.view-our-partners
+	{
+		.views-row
+		{
+			display: block;
+		}
+	}
 
-	#block-block-1
+
+	#action-blocks
 	{	
 		height: auto;
-		ul li
+
+		.backbg
+		{
+			height: 220px;
+		}
+
+		.block-imageblock
 		{
 			width:100%;
 			float: none;
+			height: 220px;
 
-			a
-			{
-				padding:50px 0px;
-
+			.block-body a
+			{	
+				padding: 50px 0px;
+				
 				&> span
 				{
 					min-width:240px;
@@ -540,6 +574,20 @@
 			}	
 		}
 	}
+	#text-resize
+	{
+		right: 10px;
+	}
+
+	#search-block-form
+	{	
+		margin-right: 34px;
+
+		input
+		{
+			width: 170px;
+		}
+	}
 
 	#site-by,
 	#ministry-logo
@@ -565,11 +613,6 @@
 	#header 
 	{
 		background-position: calc(52%);
-	}
-
-	#search-block-form 
-	{
-		top: 18px;
 	}
 
 	#search-block-form
@@ -618,11 +661,6 @@
 		{
 			font-size: 1em;
 		}
-	}
-
-	#search-block-form
-	{
-		margin-right: 0px;
 	}
 
 	#block-block-5

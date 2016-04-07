@@ -154,7 +154,7 @@
             </div>
           </div>
         </div> <!-- /#main, /#main-wrapper -->
-
+  <?php if ($page['action-blocks']): ?>
     <div id="action-blocks">
       <div>
         <div>
@@ -162,7 +162,7 @@
         </div>
       </div>
     </div>
-
+  <?php endif; ?>
     <div id="footer">
       <div>
         <div>

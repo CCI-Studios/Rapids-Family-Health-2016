@@ -34,6 +34,7 @@ a
 	&:hover
 	{
 		text-decoration: underline;
+		color: $orange;
 	}
 }
 
@@ -98,15 +99,18 @@ h3
 		&:hover
 		{
 			text-decoration: underline;
+			color: $orange;
 		}
 	}
 
 	p
 	{
 		padding-bottom:10px;
+		font-size: 18px;
 	}
 
-	h2
+	h2,
+	.view-patient-resources .view-content > h3
 	{
 		color:$green;
 		font-size: 2.5em;
@@ -163,6 +167,13 @@ h3
 
 }
 
+#content p,
+.block p,
+.views-row p
+{
+	font-size: 1.2em;
+}
+
 #header
 {
 	&> div
@@ -178,17 +189,17 @@ h3
 
 #text-resize
 {	
-	display:none;
 	position: absolute;
 	right: 20px;
 	top:45px;
 	font-weight:bold;
+	margin-top: -10px;
 
 	p
 	{	
 		color:white;
 		cursor: pointer;
-		font-size:22px;
+		font-size:26px;
 	}
 	
 	z-index:999;
@@ -245,11 +256,6 @@ h3
 	{
 		list-style: none;
 
-		#program-services-mb
-		{
-			display:none;
-		}
-
 		a
 		{
 			
@@ -301,9 +307,10 @@ h3
 
 		&>a
 		{
-			padding: 0px 14px 20px;
+			padding: 0px 12px 20px;
 			text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
-			font-size: 30px;
+			font-size: 22px;
+			margin-top: 15px;
 		}
 	}
 
@@ -331,7 +338,6 @@ h3
 	{	
 		&>a
 		{
-			margin-top: 0px;
 			position: relative;
 		}
 
@@ -558,21 +564,36 @@ h3
 	background:url(../images/icons/left-arrow-icon.png) no-repeat;
 }
 
-#block-block-1 
+#action-blocks
 {	
 	overflow:hidden;
 	height:356px;
+	position: relative;
 	border-top:8px solid $green;
 	box-shadow: 0px -5px 10px rgba(0,0,0,0.3) ;
 
-	ul li
+	.backbg
+	{
+		height: 354px;
+		background-position: center;
+	}
+
+	.block-body
+	{
+		position: absolute;
+		top: 0px;
+		width: 100%;
+	}
+
+	.block-imageblock
 	{
 		width:33%;
 		float: left;
 		list-style:none;
 		width:33.33%;
+		position: relative;
 
-		a
+		.block-body a
 		{	
 			display: block;
 			padding: 100px 0px;
@@ -625,7 +646,7 @@ h3
 		}
 	}
 
-	#featured-block
+	#block-imageblock-1
 	{
 		background:url(../images/features-bg.jpg) no-repeat;
 		background-size:cover;
@@ -636,7 +657,7 @@ h3
 			background: url(../images/icons/star-icon.png) no-repeat;
 		}
 	}
-	#program-block
+	#block-imageblock-2
 	{
 		background:url(../images/programs-bg.jpg) no-repeat;
 		background-size:cover;
@@ -648,7 +669,8 @@ h3
 			width:77px;
 		}
 	}
-	#events-block
+
+	#block-imageblock-3
 	{
 		background:url(../images/events-bg.jpg) no-repeat;
 		background-size:cover;
@@ -664,10 +686,16 @@ h3
 #block-menu-menu-footer-menu
 {
 
-	& > .content li a
-	{
-		font-size: 19px;
-		padding-right:19px;
+	& > .content ul.menu li 
+	{	
+		margin-left: -2px;
+		a
+		{
+			font-size: 19px;
+			padding: 0px 4px;
+			padding-right: 9px;
+		}
+		
 	}
 
 
@@ -907,7 +935,7 @@ h3
 	float: right;
 	position: relative;
 	top:20px;
-	margin-right:30px;
+	margin-right:50px;
 
 	input
 	{
@@ -1229,7 +1257,13 @@ h3
 
 	.fc-event-default
 	{
-		padding:5px;
+		padding:2px 5px;
+	}
+
+	.fc-event-time, .fc-event-title,
+	.fc-event-default
+	{
+		font-size: 14px;
 	}
 }
 
@@ -1299,3 +1333,23 @@ h3
 	}
 }
 
+
+.page-node-147
+{	
+	#page-title
+	{
+		color: black;
+	}
+	#block-system-main
+	{
+		h1,h2,h3,p,a,li
+		{
+			color: black;
+		}
+
+		a:hover
+		{
+			color: $orange;
+		}
+	}
+}

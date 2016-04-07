@@ -31,7 +31,8 @@ a {
   font-weight: #477f80;
   text-decoration: none; }
   a:hover {
-    text-decoration: underline; }
+    text-decoration: underline;
+    color: #e6811d; }
 
 a.svg {
   position: relative;
@@ -74,10 +75,13 @@ h3 {
     text-decoration: none;
     color: #477f80; }
     #content a:hover {
-      text-decoration: underline; }
+      text-decoration: underline;
+      color: #e6811d; }
   #content p {
-    padding-bottom: 10px; }
-  #content h2 {
+    padding-bottom: 10px;
+    font-size: 18px; }
+  #content h2,
+  #content .view-patient-resources .view-content > h3 {
     color: #477f80;
     font-size: 2.5em; }
   #content h2.orange-color {
@@ -107,6 +111,11 @@ h3 {
     #content a.button:hover {
       background: #492853; }
 
+#content p,
+.block p,
+.views-row p {
+  font-size: 1.2em; }
+
 #header > div {
   position: relative; }
 
@@ -114,16 +123,16 @@ h3 {
   position: relative; }
 
 #text-resize {
-  display: none;
   position: absolute;
   right: 20px;
   top: 45px;
   font-weight: bold;
+  margin-top: -10px;
   z-index: 999; }
   #text-resize p {
     color: white;
     cursor: pointer;
-    font-size: 22px; }
+    font-size: 26px; }
 
 .clear:after {
   clear: both;
@@ -159,9 +168,6 @@ h3 {
 #header > div li,
 #block-menu-menu-footer-menu > .content li {
   list-style: none; }
-  #header > div li #program-services-mb,
-  #block-menu-menu-footer-menu > .content li #program-services-mb {
-    display: none; }
   #header > div li a,
   #block-menu-menu-footer-menu > .content li a {
     text-decoration: none;
@@ -195,9 +201,10 @@ h3 {
     bottom: 0px;
     left: 0; }
   #block-system-main-menu .content > .menu > li > a {
-    padding: 0px 14px 20px;
+    padding: 0px 12px 20px;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-    font-size: 30px; }
+    font-size: 22px;
+    margin-top: 15px; }
   #block-system-main-menu #menu-hpr .first-word,
   #block-system-main-menu #menu-pr .first-word {
     font-size: 22px; }
@@ -209,7 +216,6 @@ h3 {
   clear: both; }
   #block-system-main-menu .content > .menu > li > a,
   #block-menu-menu-footer-menu .content > .menu > li > a {
-    margin-top: 0px;
     position: relative; }
   #block-system-main-menu ul.menu,
   #block-menu-menu-footer-menu ul.menu {
@@ -350,22 +356,31 @@ h3 {
   left: 25px;
   background: url(../images/icons/left-arrow-icon.png) no-repeat; }
 
-#block-block-1 {
+#action-blocks {
   overflow: hidden;
   height: 356px;
+  position: relative;
   border-top: 8px solid #477f80;
   box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.3); }
-  #block-block-1 ul li {
+  #action-blocks .backbg {
+    height: 354px;
+    background-position: center; }
+  #action-blocks .block-body {
+    position: absolute;
+    top: 0px;
+    width: 100%; }
+  #action-blocks .block-imageblock {
     width: 33%;
     float: left;
     list-style: none;
-    width: 33.33%; }
-    #block-block-1 ul li a {
+    width: 33.33%;
+    position: relative; }
+    #action-blocks .block-imageblock .block-body a {
       display: block;
       padding: 100px 0px;
       color: white;
       line-height: 1em; }
-      #block-block-1 ul li a > span {
+      #action-blocks .block-imageblock .block-body a > span {
         padding: 30px;
         background: rgba(230, 129, 29, 0.8);
         border-radius: 0px 5px 5px 0px;
@@ -373,7 +388,7 @@ h3 {
         min-width: 290px;
         line-height: 1.3em;
         font-size: 36px; }
-        #block-block-1 ul li a > span:before {
+        #action-blocks .block-imageblock .block-body a > span:before {
           content: "";
           float: left;
           padding-right: 20px;
@@ -382,37 +397,40 @@ h3 {
           width: 90px;
           height: 88px;
           margin-top: 8px; }
-        #block-block-1 ul li a > span span {
+        #action-blocks .block-imageblock .block-body a > span span {
           display: block;
           font-size: 65px;
           font-weight: normal; }
-      #block-block-1 ul li a h2 {
+      #action-blocks .block-imageblock .block-body a h2 {
         border-bottom: 0px; }
-      #block-block-1 ul li a:hover > span {
+      #action-blocks .block-imageblock .block-body a:hover > span {
         background: rgba(105, 58, 119, 0.8); }
-  #block-block-1 #featured-block {
+  #action-blocks #block-imageblock-1 {
     background: url(../images/features-bg.jpg) no-repeat;
     background-size: cover; }
-    #block-block-1 #featured-block a > span:before {
+    #action-blocks #block-imageblock-1 a > span:before {
       content: "";
       background: url(../images/icons/star-icon.png) no-repeat; }
-  #block-block-1 #program-block {
+  #action-blocks #block-imageblock-2 {
     background: url(../images/programs-bg.jpg) no-repeat;
     background-size: cover; }
-    #block-block-1 #program-block a > span:before {
+    #action-blocks #block-imageblock-2 a > span:before {
       content: "";
       background: url(../images/icons/program-icon.png) no-repeat;
       width: 77px; }
-  #block-block-1 #events-block {
+  #action-blocks #block-imageblock-3 {
     background: url(../images/events-bg.jpg) no-repeat;
     background-size: cover; }
-    #block-block-1 #events-block a > span:before {
+    #action-blocks #block-imageblock-3 a > span:before {
       content: "";
       background: url(../images/icons/calendar-icon.png) no-repeat; }
 
-#block-menu-menu-footer-menu > .content li a {
-  font-size: 19px;
-  padding-right: 19px; }
+#block-menu-menu-footer-menu > .content ul.menu li {
+  margin-left: -2px; }
+  #block-menu-menu-footer-menu > .content ul.menu li a {
+    font-size: 19px;
+    padding: 0px 4px;
+    padding-right: 9px; }
 
 #footer {
   background-color: #477f80;
@@ -544,7 +562,7 @@ h3 {
   float: right;
   position: relative;
   top: 20px;
-  margin-right: 30px; }
+  margin-right: 50px; }
   #search-block-form input {
     border: 0px;
     padding: 5px;
@@ -801,7 +819,10 @@ h3 {
   border-color: #e6811d;
   border-style: none; }
 .page-calendar .fc-event-default {
-  padding: 5px; }
+  padding: 2px 5px; }
+.page-calendar .fc-event-time, .page-calendar .fc-event-title,
+.page-calendar .fc-event-default {
+  font-size: 14px; }
 
 #cboxOverlay {
   background: rgba(0, 0, 0, 0.5); }
@@ -841,6 +862,13 @@ h3 {
 
 .node-program-services .field-name-field-category {
   display: none; }
+
+.page-node-147 #page-title {
+  color: black; }
+.page-node-147 #block-system-main h1, .page-node-147 #block-system-main h2, .page-node-147 #block-system-main h3, .page-node-147 #block-system-main p, .page-node-147 #block-system-main a, .page-node-147 #block-system-main li {
+  color: black; }
+.page-node-147 #block-system-main a:hover {
+  color: #e6811d; }
 
 .view-program-services .views-row,
 .view-program-services-listing .views-row {
@@ -1118,41 +1146,52 @@ h3 {
   margin-bottom: 50px; }
 
 .view-physicians .views-field-body,
-.view-accepting-new-patients .views-field-body {
+.view-accepting-new-patients .views-field-body,
+.view-patient-resources .views-field-body {
   display: none;
   overflow: hidden;
   padding-top: 10px; }
 .view-physicians .map,
-.view-accepting-new-patients .map {
+.view-accepting-new-patients .map,
+.view-patient-resources .map {
   border-radius: 10px; }
 .view-physicians .views-field-field-latitude,
 .view-physicians .views-field-field-longitude,
 .view-accepting-new-patients .views-field-field-latitude,
-.view-accepting-new-patients .views-field-field-longitude {
+.view-accepting-new-patients .views-field-field-longitude,
+.view-patient-resources .views-field-field-latitude,
+.view-patient-resources .views-field-field-longitude {
   display: none; }
-.view-physicians h3,
-.view-accepting-new-patients h3 {
-  padding-bottom: 0px !important;
-  background: url(../images/icons/polygon-down-icon.png) no-repeat right center;
-  cursor: pointer; }
 .view-physicians p,
-.view-accepting-new-patients p {
+.view-accepting-new-patients p,
+.view-patient-resources p {
   color: #9b9b9b; }
-.view-physicians h3.open,
-.view-accepting-new-patients h3.open {
-  background: url(../images/icons/polygon-up-icon.png) no-repeat right center; }
 .view-physicians .name-map,
-.view-accepting-new-patients .name-map {
+.view-accepting-new-patients .name-map,
+.view-patient-resources .name-map {
   float: left;
   width: 50%; }
   .view-physicians .name-map iframe,
-  .view-accepting-new-patients .name-map iframe {
+  .view-accepting-new-patients .name-map iframe,
+  .view-patient-resources .name-map iframe {
     width: 100% !important;
     height: 300px; }
 .view-physicians .phy-details,
-.view-accepting-new-patients .phy-details {
+.view-accepting-new-patients .phy-details,
+.view-patient-resources .phy-details {
   float: right;
   width: 48%; }
+
+.view-physicians .view-content h3,
+.view-accepting-new-patients .view-content h3,
+.view-patient-resources .container-outer > h3 {
+  padding-bottom: 0px !important;
+  background: url(../images/icons/polygon-down-icon.png) no-repeat right center;
+  cursor: pointer; }
+  .view-physicians .view-content h3.open,
+  .view-accepting-new-patients .view-content h3.open,
+  .view-patient-resources .container-outer > h3.open {
+    background: url(../images/icons/polygon-up-icon.png) no-repeat right center; }
 
 #block-views-program-services-block-1.menu-fixed {
   position: fixed;
@@ -1167,9 +1206,9 @@ h3 {
   text-align: center; }
 .view-our-partners .views-row {
   display: inline-block;
-  padding: 0 30px 50px 0;
+  padding: 0 15px 1.8em 0;
   text-align: center;
-  width: 200px; }
+  min-width: 200px; }
   .view-our-partners .views-row img {
     border-radius: 0px; }
 .view-our-partners img {
@@ -1226,23 +1265,40 @@ h3 {
 .view-health-care-providers .views-field-body,
 .view-patient-resources .views-field-body {
   padding-top: 40px; }
+.view-health-care-providers .views-field-title,
+.view-patient-resources .views-field-title {
+  color: #477f80; }
+
+.view-patient-resources p {
+  color: #477f80; }
+.view-patient-resources .container {
+  display: none; }
+.view-patient-resources .views-field-body {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+.view-patient-resources .view-content .container-outer {
+  border-bottom: 1px solid #cdcdcd;
+  padding-bottom: 15px; }
+  .view-patient-resources .view-content .container-outer > h3 {
+    font-size: 2.5em !important; }
 
 .views-field-body-1.hide {
   display: none; }
 
 @media screen and (max-width: 1060px) {
-  #block-block-1 #featured-block a > span:before,
-  #block-block-1 #program-block a > span:before,
-  #block-block-1 #events-block a > span:before {
-    background-size: 75px;
+  #action-blocks #block-imageblock-1 .content a > span:before,
+  #action-blocks #block-imageblock-2 .content a > span:before,
+  #action-blocks #block-imageblock-3 .content a > span:before {
+    background-size: 60px;
     margin-top: 10px; }
-  #block-block-1 #program-block a > span:before {
+  #action-blocks #block-imageblock-2 .content a > span:before {
     padding-right: 8px; }
-  #block-block-1 ul li a > span {
+  #action-blocks .block-imageblock .block-body a > span {
     min-width: 240px; }
-    #block-block-1 ul li a > span:before {
+    #action-blocks .block-imageblock .block-body a > span:before {
       width: 67px; }
-    #block-block-1 ul li a > span span {
+    #action-blocks .block-imageblock .block-body a > span span {
       font-size: 52px; }
 
   #block-menu-menu-footer-menu ul.menu {
@@ -1274,6 +1330,10 @@ h3 {
   #content .fullcalendar h2 {
     font-size: 2.1em; }
 
+  #text-resize {
+    top: auto;
+    bottom: -50px; }
+
   #block-system-main-menu {
     display: none;
     position: absolute;
@@ -1304,24 +1364,26 @@ h3 {
         color: white;
         padding-left: 30px; }
 
-  #block-block-1 {
-    height: 320px; }
-    #block-block-1 #featured-block a > span:before,
-    #block-block-1 #program-block a > span:before,
-    #block-block-1 #events-block a > span:before {
-      background-size: 55px;
-      height: 60px; }
-    #block-block-1 ul li {
+  #action-blocks {
+    height: auto; }
+    #action-blocks .backbg {
+      height: auto; }
+    #action-blocks .block-imageblock {
+      height: 320px; }
+      #action-blocks .block-imageblock .block-body a > span:before {
+        background-size: 55px;
+        height: 70px; }
+    #action-blocks .block-imageblock {
       border-bottom: 2px solid white; }
-    #block-block-1 ul li a > span {
+    #action-blocks .block-imageblock .block-body a > span {
       min-width: 204px;
       padding: 20px 10px;
       font-size: 26px; }
-      #block-block-1 ul li a > span:before {
+      #action-blocks .block-imageblock .block-body a > span:before {
         width: 48px; }
-      #block-block-1 ul li a > span span {
+      #action-blocks .block-imageblock .block-body a > span span {
         font-size: 42px; }
-    #block-block-1 #program-block a > span:before {
+    #action-blocks #block-imageblock-2 .block-body a > span:before {
       padding-right: 8px;
       width: 60px; }
 
@@ -1408,16 +1470,22 @@ h3 {
   #block-views-program-services-block-1 {
     display: none; }
 
-  #block-block-1 {
+  .view-our-partners .views-row {
+    display: block; }
+
+  #action-blocks {
     height: auto; }
-    #block-block-1 ul li {
+    #action-blocks .backbg {
+      height: 220px; }
+    #action-blocks .block-imageblock {
       width: 100%;
-      float: none; }
-      #block-block-1 ul li a {
+      float: none;
+      height: 220px; }
+      #action-blocks .block-imageblock .block-body a {
         padding: 50px 0px; }
-        #block-block-1 ul li a > span {
+        #action-blocks .block-imageblock .block-body a > span {
           min-width: 240px; }
-        #block-block-1 ul li a > span span {
+        #action-blocks .block-imageblock .block-body a > span span {
           font-size: 52px; }
 
   #contact-details {
@@ -1481,6 +1549,14 @@ h3 {
       font-size: 48px;
       min-width: 200px; }
 
+  #text-resize {
+    right: 10px; }
+
+  #search-block-form {
+    margin-right: 34px; }
+    #search-block-form input {
+      width: 170px; }
+
   #site-by,
   #ministry-logo {
     padding: 5px 10px 0px; }
@@ -1496,9 +1572,6 @@ h3 {
 
   #header {
     background-position: calc(52%); }
-
-  #search-block-form {
-    top: 18px; }
 
   #search-block-form {
     top: 22px; }
@@ -1524,9 +1597,6 @@ h3 {
       height: 350px; }
     #block-views-banner-block p {
       font-size: 1em; }
-
-  #search-block-form {
-    margin-right: 0px; }
 
   #block-block-5 {
     margin: 20px 10px 20px; }

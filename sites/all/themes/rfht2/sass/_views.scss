@@ -377,8 +377,8 @@
 .view-physicians,
 .view-accepting-new-patients
 {
-	 .views-row
-	 {
+ 	.views-row
+ 	{
 	 	border-bottom: 1px solid #cdcdcd;
 	 	padding-bottom: 10px;
 	 	margin-bottom: 10px;
@@ -395,18 +395,17 @@
  	 	{
 	 		background: url(../images/icons/polygon-up-icon.png) no-repeat right center;
 	 	}
-	 }
+ 	}
 
 	 .views-field-body-1.close
-	 {
+ 	{
 	 	display: none;
-	 }
+ 	}
 
-
-	 .views-field-body.open
-	 {
+ 	.views-field-body.open
+ 	{
 	 	height: auto;
-	 }
+ 	}
 }
 
 .view-our-team
@@ -438,7 +437,8 @@
 }
 	
 .view-physicians,
-.view-accepting-new-patients
+.view-accepting-new-patients,
+.view-patient-resources
 {	
 	.views-field-body
 	{
@@ -458,23 +458,13 @@
 		display: none;
 	}
 
-	h3
-	{	
-		padding-bottom: 0px !important;
-		background: url(../images/icons/polygon-down-icon.png) no-repeat right center;
- 		cursor: pointer;
-	}
 
  	p
  	{
  		color:#9b9b9b;
  	}
 
- 	h3.open	 	
- 	{
- 		background: url(../images/icons/polygon-up-icon.png) no-repeat right center;
- 	}
-
+ 
 	.name-map
 	{
 		float: left;
@@ -492,6 +482,23 @@
 		float: right;
 		width:48%;
 	}
+}
+
+.view-physicians .view-content h3,
+.view-accepting-new-patients .view-content h3,
+.view-patient-resources .container-outer > h3
+{
+	
+	padding-bottom: 0px !important;
+	background: url(../images/icons/polygon-down-icon.png) no-repeat right center;
+	cursor: pointer;
+
+	&.open	 	
+ 	{
+ 		background: url(../images/icons/polygon-up-icon.png) no-repeat right center;
+ 	}
+
+
 }
 
 
@@ -523,9 +530,9 @@
 	.views-row
 	{
 		display: inline-block;
-		padding: 0 30px 50px 0;
+		padding: 0 15px 1.8em 0;
 		text-align: center;
-		width: 200px;
+		min-width: 200px;
 
 		img
 		{
@@ -611,6 +618,42 @@
 	.views-field-body
 	{
 		padding-top: 40px;
+	}
+
+	.views-field-title
+	{
+		color: $green;
+	}
+}
+
+.view-patient-resources
+{
+	p
+	{
+		color:$green;
+	}
+
+	.container
+	{
+		display: none;
+	}
+
+	.views-field-body
+	{
+		display: block;
+		padding-top: 10px;
+		padding-bottom:10px;
+	}
+
+	.view-content .container-outer
+	{	
+		border-bottom:1px solid #cdcdcd;
+		padding-bottom: 15px;
+
+		&>h3
+		{
+			font-size: 2.5em!important;
+		}
 	}
 }
 

@@ -17,7 +17,20 @@
             $('.views-field-body').not($(this).parent().parent().find('.views-field-body')).slideUp();
             $('.view-physicians h3,.view-accepting-new-patients h3').not($(this)).removeClass('open');
             $(this).toggleClass('open');
-       });
+        });
+
+         $('.view-patient-resources .view-content > h3').each(function() {
+                 $(this).nextUntil('h3').andSelf().wrapAll('<div class="container-outer"></div>');
+                 $('.container-outer > div.views-row').wrapAll('<div class="container"></div>');
+         });
+
+         $('.view-patient-resources h3').click(function(){
+
+            $(this).next().slideToggle();
+            $('.view-patient-resources .container').not($(this).next()).slideUp();
+            $('.view-patient-resources h3').not($(this)).removeClass('open');
+            $(this).toggleClass('open');
+        });
 
 
         if($(window).width() < 920)
@@ -46,7 +59,6 @@
           var pathname=pathname.replace(/%20/g," ");
            var pathname=pathname.replace(/-/g," ");
           var sd = "'"+pathname+"'";
-           console.log(toTitleCase(sd));
        }
        else
        {
@@ -59,7 +71,10 @@
 
       function toTitleCase(str)
       {
-          return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+          str1 = str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+          //str1 = str1.replace("'","");
+          console.log(str1);
+          return str1;
       }
   
       $(".view-program-services .views-row .field-content span:contains("+toTitleCase(sd)+")").parents('.views-row').addClass('active');

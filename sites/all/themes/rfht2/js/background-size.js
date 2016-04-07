@@ -12,9 +12,18 @@ $(function(){
 
 	 	var max1=$('.view-banner .views-row').length;
 
+	 	var feature= $('#block-imageblock-1');
+	 	var programs= $('#block-imageblock-2');
+	 	var events= $('#block-imageblock-3');
+
+ 		replacebg_blocks(feature);
+ 		replacebg_blocks(programs);
+ 		replacebg_blocks(events);
+
 	 	setTimeout(function(){
 	 		
 	 		replacebg();
+
 
 	 	},100)
 	 	function replacebg()
@@ -27,6 +36,15 @@ $(function(){
 				$(current2).append('<div class="backbg"></div>');
 				$('.view-banner .views-row-'+i+' .views-field-field-image-banner .backbg').css('background-image', 'url(' + imgSrc1 + ')');  
 	 	    }
+	 	}
+
+	 	function replacebg_blocks(block)
+	 	{
+ 			var imgSrc1 = block.find('.block-image img').attr('src');
+			var current2 = block.find('.block-image');
+			block.find('.block-image img').remove();
+			block.find(current2).append('<div class="backbg"></div>');
+			block.find('.block-image .backbg').css('background-image', 'url(' + imgSrc1 + ')');  
 	 	}
      	
 

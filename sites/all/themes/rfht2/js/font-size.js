@@ -2,22 +2,27 @@
 (function($) {
     $(function()
     {    // Reset Font Size
-    var originalFontSize = $('html,p').css('font-size');
 
-    $("#text-resize-decrease").click(function () {
-        $('html,p').css('font-size', originalFontSize);
+
+
+  var originalFontSize = $('html').css('font-size');
+
+    $(".resetFont").click(function () {
+        $('html').css('font-size', originalFontSize);
     });
     // Increase Font Size
     $("#text-resize-increase").on('click', function () {
         changeFontSize(true);
     });
     // Decrease Font Size
-    $("#text_resize_decrease").on('click', function () {
+    $("#text-resize-decrease").on('click', function () {
+
         changeFontSize(false);
     });
 
-    var changeFontSize = function (increaseFont) {
-    var fontTargets = new Array('#content', '#content p');
+
+var changeFontSize = function (increaseFont) {
+    var fontTargets = new Array('#content p, .views-row p, .block p, #content li');
 
     fontTargets.forEach(function (element) {
         var $element = $(element);
@@ -25,19 +30,31 @@
         var currentFontSize = $element.css('font-size');
         var currentFontSizeNum = parseFloat(currentFontSize, 10);
 
-        if(currentFontSizeNum < 28)
-        {
-          if (increaseFont) {
-            $element.css('font-size', 0);
+        if (increaseFont) {
+          
+
+            if(currentFontSizeNum < 28)
+            {     $element.css('font-size', 0);
                 newFontSize = currentFontSizeNum * 1.2;
-            } else {
+            }
+            
+        } else {
+            if(currentFontSizeNum > 22)
+            {
                 newFontSize = currentFontSizeNum * 0.8;
+
             }
         }
-      
+
         $element.css('font-size', newFontSize);
     });
-}
+};
+
 
 });
+
+
 }(jQuery));
+
+
+
