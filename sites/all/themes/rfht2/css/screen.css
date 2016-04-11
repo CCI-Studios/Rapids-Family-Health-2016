@@ -301,7 +301,7 @@ h3 {
   padding: 50px 100px;
   position: absolute;
   top: 50%;
-  top: 20% \9;
+  top: 50% \9;
   transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
@@ -430,7 +430,7 @@ h3 {
   #block-menu-menu-footer-menu > .content ul.menu li a {
     font-size: 19px;
     padding: 0px 4px;
-    padding-right: 9px; }
+    padding-right: 8px; }
 
 #footer {
   background-color: #477f80;
@@ -1286,6 +1286,9 @@ h3 {
 .views-field-body-1.hide {
   display: none; }
 
+#block-views-responsive-calendar-block {
+  display: none; }
+
 @media screen and (max-width: 1060px) {
   #action-blocks #block-imageblock-1 .content a > span:before,
   #action-blocks #block-imageblock-2 .content a > span:before,
@@ -1348,7 +1351,8 @@ h3 {
       display: none; }
     #block-system-main-menu .content > .menu > li > a {
       padding: 20px 10px;
-      font-size: 28px; }
+      font-size: 28px;
+      margin-top: 0px; }
     #block-system-main-menu li {
       display: block;
       border-bottom: 1px solid #83b3b2; }
@@ -1472,6 +1476,31 @@ h3 {
 
   .view-our-partners .views-row {
     display: block; }
+
+  #block-views-responsive-calendar-block {
+    display: block; }
+    #block-views-responsive-calendar-block .views-row {
+      padding-bottom: 20px;
+      border-bottom: 1px solid #ccc;
+      margin-bottom: 20px; }
+      #block-views-responsive-calendar-block .views-row .views-field-title {
+        font-size: 24px; }
+    #block-views-responsive-calendar-block .pager li {
+      background-color: transparent;
+      margin: 0px; }
+      #block-views-responsive-calendar-block .pager li a {
+        font-size: 24px; }
+    #block-views-responsive-calendar-block .pager li.date-prev a {
+      background: url(../images/icons/left-arrow-orange.png) no-repeat;
+      background-position: left center;
+      padding-left: 20px; }
+    #block-views-responsive-calendar-block .pager li.date-next a {
+      background: url(../images/icons/right-arrow-orange.png) no-repeat;
+      background-position: right center;
+      padding-right: 20px; }
+
+  .view-full-calendar {
+    display: none; }
 
   #action-blocks {
     height: auto; }

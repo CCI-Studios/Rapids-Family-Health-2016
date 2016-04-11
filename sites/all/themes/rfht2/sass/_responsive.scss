@@ -149,6 +149,7 @@
 			{
 				padding: 20px 10px;
 				font-size: 28px;
+				margin-top: 0px;
 			}
 			
 		}
@@ -419,6 +420,62 @@
 		{
 			display: block;
 		}
+	}
+
+	#block-views-responsive-calendar-block
+	{
+		display: block;
+
+		.views-row
+		{
+			padding-bottom: 20px;
+			border-bottom: 1px solid #ccc;
+			margin-bottom: 20px;
+
+			.views-field-title
+			{
+				font-size: 24px;
+			}
+		}
+
+		.pager
+		{
+			li
+			{
+				background-color: transparent;
+				margin: 0px;
+				a
+				{
+					font-size: 24px;
+				}
+			}
+
+			li.date-prev
+			{
+				a
+				{
+					background: url(../images/icons/left-arrow-orange.png) no-repeat;
+					background-position: left center;
+					padding-left: 20px;
+				}
+			}
+
+			li.date-next
+			{
+				a
+				{
+					background: url(../images/icons/right-arrow-orange.png) no-repeat;
+					background-position: right center;
+					padding-right: 20px;
+				}
+			}
+				
+		}
+	}
+
+	.view-full-calendar
+	{
+		display: none;
 	}
 
 
