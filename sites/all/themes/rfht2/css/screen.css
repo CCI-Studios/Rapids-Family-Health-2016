@@ -404,25 +404,16 @@ h3 {
         border-bottom: 0px; }
       #action-blocks .block-imageblock .block-body a:hover > span {
         background: rgba(105, 58, 119, 0.8); }
-  #action-blocks #block-imageblock-1 {
-    background: url(../images/features-bg.jpg) no-repeat;
-    background-size: cover; }
-    #action-blocks #block-imageblock-1 a > span:before {
-      content: "";
-      background: url(../images/icons/star-icon.png) no-repeat; }
-  #action-blocks #block-imageblock-2 {
-    background: url(../images/programs-bg.jpg) no-repeat;
-    background-size: cover; }
-    #action-blocks #block-imageblock-2 a > span:before {
-      content: "";
-      background: url(../images/icons/program-icon.png) no-repeat;
-      width: 77px; }
-  #action-blocks #block-imageblock-3 {
-    background: url(../images/events-bg.jpg) no-repeat;
-    background-size: cover; }
-    #action-blocks #block-imageblock-3 a > span:before {
-      content: "";
-      background: url(../images/icons/calendar-icon.png) no-repeat; }
+  #action-blocks #block-imageblock-1 a > span:before {
+    content: "";
+    background: url(../images/icons/star-icon.png) no-repeat; }
+  #action-blocks #block-imageblock-2 a > span:before {
+    content: "";
+    background: url(../images/icons/program-icon.png) no-repeat;
+    width: 77px; }
+  #action-blocks #block-imageblock-3 a > span:before {
+    content: "";
+    background: url(../images/icons/calendar-icon.png) no-repeat; }
 
 #block-menu-menu-footer-menu > .content ul.menu li {
   margin-left: -2px; }
@@ -1369,8 +1360,6 @@ h3 {
 
   #action-blocks {
     height: auto; }
-    #action-blocks .backbg {
-      height: auto; }
     #action-blocks .block-imageblock {
       height: 320px; }
       #action-blocks .block-imageblock .block-body a > span:before {
