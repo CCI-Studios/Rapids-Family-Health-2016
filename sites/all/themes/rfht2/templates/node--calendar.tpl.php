@@ -83,24 +83,18 @@
 
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 	<?php   print render($content); ?>
-	<div id="button-links">
+	<div id="button-links"><?php  ?>
 		
 		<?php
 		 $category = $node->field_category_cal['und'][0]['taxonomy_term']->name;
-		 if(isset($node->field_subcategory['und'][0]['entity']->title))
-		 {
-		 	 $str = $node->field_subcategory['und'][0]['entity']->title;
-		     $sub_category = preg_replace("/[\s_]/", "-", $str);
-		 }
-		
-		 if(isset($node->field_form_['und'][0]['entity']->title))
-		 {
-		 	 $form = $node->field_form_['und'][0]['entity']->title;
-	     	 $form2 = preg_replace("/[\s_]/", "-", $form);
-		 }
 
-		
+		 $str = $node->field_subcategory['und'][0]['entity']->title;
+		 $sub_category = preg_replace("/[\s_]/", "-", $str);
+		 $form = $node->field_form_['und'][0]['entity']->title;
+		 $form2 = preg_replace("/[\s_]/", "-", $form);
+
 		?>
-		<a href="/program-services/<?php echo $category?>/<?php if(isset($sub_category)){ echo $sub_category ;}?>" class="button">Program Details</a></div>
+		<!-- <a href="/<?php echo $form2?>" class="button">Registration</a> -->
+		<a href="/program-services/<?php echo $category?>/<?php echo $sub_category ?>" class="button">Program Details</a></div>
 
 	</div>
