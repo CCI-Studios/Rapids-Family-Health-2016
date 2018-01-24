@@ -117,7 +117,8 @@
 		}
 	}
 
-	#text-resize
+	#text-resize,
+	#header-social
 	{
 		top: auto;
 		bottom: -50px;
@@ -628,16 +629,20 @@
 	}
 	#text-resize
 	{
+		right: 45px;
+	}
+	#header-social
+	{
 		right: 10px;
 	}
 
 	#search-block-form
 	{	
-		margin-right: 34px;
+		margin-right: 74px;
 
 		input
 		{
-			width: 170px;
+			width: 150px;
 		}
 	}
 

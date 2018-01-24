@@ -190,7 +190,7 @@ h3
 #text-resize
 {	
 	position: absolute;
-	right: 20px;
+	right: 60px;
 	top:45px;
 	font-weight:bold;
 	margin-top: -10px;
@@ -203,6 +203,27 @@ h3
 	}
 	
 	z-index:999;
+}
+
+#header-social
+{
+	position: absolute;
+	right: 20px;
+	top: 45px;
+	font-weight: bold;
+	margin-top: -10px;
+	z-index: 999;
+
+	.fb
+	{
+		font-size: 0;
+		display: block;
+		text-decoration: none;
+		width: 20px;
+		height: 33px;
+		background: url(../images/fb.png) no-repeat center center;
+		padding: 0;
+	}
 }
 
 .clear:after {
@@ -926,7 +947,7 @@ h3
 	float: right;
 	position: relative;
 	top:20px;
-	margin-right:50px;
+	margin-right:90px;
 
 	input
 	{

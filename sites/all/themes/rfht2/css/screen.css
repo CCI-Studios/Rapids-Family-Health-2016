@@ -14,6 +14,7 @@ html {
 @font-face {
   font-family: CenturyLT-BookItalic;
   src: url(../Font/itc-century-lt-book-italic.woff); }
+
 body {
   font-family: "myriad-pro-condensed",sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -124,7 +125,7 @@ h3 {
 
 #text-resize {
   position: absolute;
-  right: 20px;
+  right: 60px;
   top: 45px;
   font-weight: bold;
   margin-top: -10px;
@@ -133,6 +134,22 @@ h3 {
     color: white;
     cursor: pointer;
     font-size: 26px; }
+
+#header-social {
+  position: absolute;
+  right: 20px;
+  top: 45px;
+  font-weight: bold;
+  margin-top: -10px;
+  z-index: 999; }
+  #header-social .fb {
+    font-size: 0;
+    display: block;
+    text-decoration: none;
+    width: 20px;
+    height: 33px;
+    background: url(../images/fb.png) no-repeat center center;
+    padding: 0; }
 
 .clear:after {
   clear: both;
@@ -165,6 +182,7 @@ h3 {
 #header > div > div,
 #block-menu-menu-footer-menu > .content > div {
   position: relative; }
+
 #header > div li,
 #block-menu-menu-footer-menu > .content li {
   list-style: none; }
@@ -181,9 +199,11 @@ h3 {
     #block-menu-menu-footer-menu > .content li a span {
       max-width: 137px;
       display: inline-block; }
+
 #header > div li.leaf,
 #block-menu-menu-footer-menu > .content li.leaf {
   padding: 0px; }
+
 #header > div ul.menu li,
 #block-menu-menu-footer-menu > .content ul.menu li {
   margin: 0px; }
@@ -312,12 +332,16 @@ h3 {
   #block-views-banner-block .views-field-body h2 {
     font-size: 62px;
     font-weight: normal; }
+
 #block-views-banner-block .views-field-field-image-banner {
   height: 500px; }
+
 #block-views-banner-block .backbg {
   height: 500px; }
+
 #block-views-banner-block .views-row {
   height: 500px; }
+
 #block-views-banner-block .field-content {
   max-width: 572px;
   margin: 0 auto; }
@@ -552,7 +576,7 @@ h3 {
   float: right;
   position: relative;
   top: 20px;
-  margin-right: 50px; }
+  margin-right: 90px; }
   #search-block-form input {
     border: 0px;
     padding: 5px;
@@ -704,6 +728,7 @@ h3 {
   float: left;
   padding-right: 10px;
   padding-top: 5px; }
+
 #location1 .phy-accepting,
 #location2 .phy-accepting,
 #location3 .phy-accepting,
@@ -711,6 +736,7 @@ h3 {
 .view-accepting-new-patients .phy-accepting {
   color: #e6811d;
   font-weight: bold; }
+
 #location1 .phone,
 #location1 .phy-accepting,
 #location2 .phone,
@@ -722,6 +748,7 @@ h3 {
 .view-accepting-new-patients .phone,
 .view-accepting-new-patients .phy-accepting {
   clear: left; }
+
 #location1 .loc p,
 #location1 .phy-help p,
 #location2 .loc p,
@@ -734,42 +761,49 @@ h3 {
 .view-accepting-new-patients .phy-help p {
   float: left;
   font-size: 22px; }
+
 #location1 .loc p,
 #location2 .loc p,
 #location3 .loc p,
 .view-physicians .loc p,
 .view-accepting-new-patients .loc p {
   max-width: 200px; }
+
 #location1 .phone:before,
 #location2 .phone:before,
 #location3 .phone:before,
 .view-physicians .phone:before,
 .view-accepting-new-patients .phone:before {
   content: url(../images/icons/phone-icon1.png); }
+
 #location1 .fax:before,
 #location2 .fax:before,
 #location3 .fax:before,
 .view-physicians .fax:before,
 .view-accepting-new-patients .fax:before {
   content: url(../images/icons/fax-icon.png); }
+
 #location1 .loc:before,
 #location2 .loc:before,
 #location3 .loc:before,
 .view-physicians .loc:before,
 .view-accepting-new-patients .loc:before {
   content: url(../images/icons/marker-loc-icon.png); }
+
 #location1 .phy-help:before,
 #location2 .phy-help:before,
 #location3 .phy-help:before,
 .view-physicians .phy-help:before,
 .view-accepting-new-patients .phy-help:before {
   content: url(../images/icons/plus-sign-icon.png); }
+
 #location1 .phy-accepting:before,
 #location2 .phy-accepting:before,
 #location3 .phy-accepting:before,
 .view-physicians .phy-accepting:before,
 .view-accepting-new-patients .phy-accepting:before {
   content: url(../images/icons/new-patient-icon.png); }
+
 #location1 .phy-help,
 #location2 .phy-help,
 #location3 .phy-help,
@@ -791,25 +825,32 @@ h3 {
     font-size: 38px; }
   .page-calendar #colorbox #content {
     padding: 10px; }
+
 .page-calendar #node-9 span,
 .page-calendar #node-9 .field-item {
   color: #477f80; }
+
 .page-calendar #node-9 .field-type-text-with-summary .field-items {
   max-width: 75%; }
+
 .page-calendar .fc-today {
   background: #492853; }
   .page-calendar .fc-today .fc-day-number {
     color: white; }
+
 .page-calendar .fc td {
   color: #477f80; }
+
 .page-calendar .fc-event-inner,
 .page-calendar .fc-event-time,
 .page-calendar .fc-event-default {
   background: #e6811d;
   border-color: #e6811d;
   border-style: none; }
+
 .page-calendar .fc-event-default {
   padding: 2px 5px; }
+
 .page-calendar .fc-event-time, .page-calendar .fc-event-title,
 .page-calendar .fc-event-default {
   font-size: 12px; }
@@ -820,6 +861,7 @@ h3 {
 .node-calendar .field-name-field-category-cal,
 .node-calendar .field-name-field-subcategory {
   display: none; }
+
 .node-calendar .field-label {
   padding-right: 10px;
   padding-bottom: 10px;
@@ -855,8 +897,10 @@ h3 {
 
 .page-node-147 #page-title {
   color: black; }
+
 .page-node-147 #block-system-main h1, .page-node-147 #block-system-main h2, .page-node-147 #block-system-main h3, .page-node-147 #block-system-main p, .page-node-147 #block-system-main a, .page-node-147 #block-system-main li {
   color: black; }
+
 .page-node-147 #block-system-main a:hover {
   color: #e6811d; }
 
@@ -890,6 +934,7 @@ h3 {
     .view-program-services-listing .views-row a span {
       display: block;
       padding-top: 20px; }
+
 .view-program-services .views-row:last-child,
 .view-program-services-listing .views-row:last-child {
   margin-right: 0px; }
@@ -907,6 +952,7 @@ h3 {
 
 .view-program-services-listing .view-content {
   text-align: center; }
+
 .view-program-services-listing .views-row {
   height: 450px;
   width: 450px;
@@ -1060,7 +1106,7 @@ h3 {
     border-radius: 0px 5px 5px 0px;
     display: inline-block;
     top: 50%;
-    top: 30% \9;
+    top: 30%\9;
     transform: translateY(-50%);
     -moz-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
@@ -1113,10 +1159,12 @@ h3 {
   .view-accepting-new-patients .views-row .views-field-title.open,
   .view-accepting-new-patients .views-row h3.open {
     background: url(../images/icons/polygon-up-icon.png) no-repeat right center; }
+
 .view-our-team .views-field-body-1.close,
 .view-physicians .views-field-body-1.close,
 .view-accepting-new-patients .views-field-body-1.close {
   display: none; }
+
 .view-our-team .views-field-body.open,
 .view-physicians .views-field-body.open,
 .view-accepting-new-patients .views-field-body.open {
@@ -1129,6 +1177,7 @@ h3 {
 .page-node-14 h2 {
   border-bottom: 1px solid #cdcdcd;
   padding-bottom: 20px; }
+
 .page-node-14 #block-block-1 h2 {
   border-bottom: 0px; }
 
@@ -1141,10 +1190,12 @@ h3 {
   display: none;
   overflow: hidden;
   padding-top: 10px; }
+
 .view-physicians .map,
 .view-accepting-new-patients .map,
 .view-patient-resources .map {
   border-radius: 10px; }
+
 .view-physicians .views-field-field-latitude,
 .view-physicians .views-field-field-longitude,
 .view-accepting-new-patients .views-field-field-latitude,
@@ -1152,10 +1203,12 @@ h3 {
 .view-patient-resources .views-field-field-latitude,
 .view-patient-resources .views-field-field-longitude {
   display: none; }
+
 .view-physicians p,
 .view-accepting-new-patients p,
 .view-patient-resources p {
   color: #9b9b9b; }
+
 .view-physicians .name-map,
 .view-accepting-new-patients .name-map,
 .view-patient-resources .name-map {
@@ -1166,6 +1219,7 @@ h3 {
   .view-patient-resources .name-map iframe {
     width: 100% !important;
     height: 300px; }
+
 .view-physicians .phy-details,
 .view-accepting-new-patients .phy-details,
 .view-patient-resources .phy-details {
@@ -1194,16 +1248,15 @@ h3 {
 
 .view-our-partners .view-content {
   text-align: center; }
+
 .view-our-partners .views-row {
   display: inline-block;
   padding: 0 15px 1.8em 0;
   text-align: center;
   min-width: 200px; }
   .view-our-partners .views-row img {
-    border-radius: 0px;
-    max-width: 180px !important;
-    height: auto !important;
-    vertical-align: middle; }
+    border-radius: 0px; }
+
 .view-our-partners img {
   filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
   /* Firefox 3.5+ */
@@ -1211,6 +1264,7 @@ h3 {
   /* IE6-9 */
   -webkit-filter: grayscale(100%);
   /* Chrome 19+ & Safari 6+ */ }
+
 .view-our-partners img:hover {
   filter: none;
   -webkit-filter: grayscale(0%); }
@@ -1252,24 +1306,30 @@ h3 {
 .view-patient-resources .views-field-field-logo-pt-resources {
   width: 200px;
   float: left; }
+
 .view-health-care-providers .views-row,
 .view-patient-resources .views-row {
   overflow: hidden; }
+
 .view-health-care-providers .views-field-body,
 .view-patient-resources .views-field-body {
   padding-top: 40px; }
+
 .view-health-care-providers .views-field-title,
 .view-patient-resources .views-field-title {
   color: #477f80; }
 
 .view-patient-resources p {
   color: #477f80; }
+
 .view-patient-resources .container {
   display: none; }
+
 .view-patient-resources .views-field-body {
   display: block;
   padding-top: 10px;
   padding-bottom: 10px; }
+
 .view-patient-resources .view-content .container-outer {
   border-bottom: 1px solid #cdcdcd;
   padding-bottom: 15px; }
@@ -1296,7 +1356,6 @@ h3 {
       width: 67px; }
     #action-blocks .block-imageblock .block-body a > span span {
       font-size: 52px; }
-
   #block-menu-menu-footer-menu ul.menu {
     overflow: hidden; }
   #block-menu-menu-footer-menu li {
@@ -1304,10 +1363,8 @@ h3 {
     display: block; }
   #block-menu-menu-footer-menu > .content li a {
     padding: 0px 6px; }
-
   #page-wrapper {
     overflow: hidden; }
-
   #block-views-program-services-block-1 .view-program-services .views-row a {
     padding: 0px 1px; }
   #block-views-program-services-block-1.menu-fixed .view-program-services .views-row a {
@@ -1319,17 +1376,18 @@ h3 {
   #block-views-program-services-block-1.menu-fixed .view-program-services .views-row-1 a img {
     width: 40px;
     height: auto; } }
+
 @media screen and (min-width: 991px) {
   #block-system-main-menu {
     display: block !important; } }
+
 @media screen and (max-width: 990px) {
   #content .fullcalendar h2 {
     font-size: 2.1em; }
-
-  #text-resize {
+  #text-resize,
+  #header-social {
     top: auto;
     bottom: -50px; }
-
   #block-system-main-menu {
     display: none;
     position: absolute;
@@ -1360,7 +1418,6 @@ h3 {
       #block-system-main-menu li.expanded ul.menu li a {
         color: white;
         padding-left: 30px; }
-
   #action-blocks {
     height: auto; }
     #action-blocks .block-imageblock {
@@ -1381,7 +1438,6 @@ h3 {
     #action-blocks #block-imageblock-2 .block-body a > span:before {
       padding-right: 8px;
       width: 60px; }
-
   #block-views-banner-block .views-field-body {
     max-width: 500px;
     padding: 50px 50px; }
@@ -1389,7 +1445,6 @@ h3 {
     left: 5px; }
   #block-views-banner-block .slick-next {
     right: 5px; }
-
   #block-block-5 {
     display: block;
     background: url(../images/icons/menu-icon.png) no-repeat left;
@@ -1400,16 +1455,12 @@ h3 {
       color: white; }
       #block-block-5 a:hover {
         text-decoration: none; }
-
   #search-block-form {
     top: 18px; }
-
   #header {
     background-position: calc(61% - 60px); }
-
   #logo a {
     display: block; }
-
   #header {
     background-position: calc(57% - 60px) 10px; }
     #header > div li a span {
@@ -1417,18 +1468,14 @@ h3 {
     #header #menu-pr .first-word,
     #header #menu-hpr .first-word {
       font-size: inherit; }
-
   #footer {
     background-position: calc(-1370px + 100px) 82px; }
-
   .webform-client-form-8, .webform-client-form {
     width: 65%; }
     .webform-client-form-8 input, .webform-client-form input {
       width: 200px; }
-
   #contact-details {
     padding-left: 20px; }
-
   .view-program-sub-category .view-content {
     text-align: center; }
   .view-program-sub-category .views-row {
@@ -1438,9 +1485,9 @@ h3 {
     max-width: 450px; }
     .view-program-sub-category .views-row:last-child {
       margin-right: auto; }
-
   #header > div li #program-services-mb {
     display: block; } }
+
 @media screen and (max-width: 920px) {
   #services-nav {
     position: relative;
@@ -1454,20 +1501,17 @@ h3 {
       #services-nav a.next {
         float: left;
         background: url(../images/icons/right-arrow-orange.png) no-repeat right 15px; }
-
   #block-system-main .view-program-services {
     max-width: 655px;
     margin: 0 auto; }
-
   .map iframe {
     pointer-events: none; } }
+
 @media screen and (max-width: 767px) {
   #block-views-program-services-block-1 {
     display: none; }
-
   .view-our-partners .views-row {
     display: block; }
-
   #block-views-responsive-calendar-block {
     display: block; }
     #block-views-responsive-calendar-block .views-row {
@@ -1489,10 +1533,8 @@ h3 {
       background: url(../images/icons/right-arrow-orange.png) no-repeat;
       background-position: right center;
       padding-right: 20px; }
-
   .view-full-calendar {
     display: none; }
-
   #action-blocks {
     height: auto; }
     #action-blocks .backbg {
@@ -1507,57 +1549,46 @@ h3 {
           min-width: 240px; }
         #action-blocks .block-imageblock .block-body a > span span {
           font-size: 52px; }
-
   #contact-details {
     top: auto;
     padding-top: 30px;
     padding-left: 0px; }
-
   #location1 .inner-loc,
   #location2 .inner-loc,
   #location3 .inner-loc {
     width: 100%;
     float: none; }
-
   #map1, #map2, #map3 {
     width: 100%;
     margin: 15px 0px;
     float: none; }
-
   .webform-client-form-8, .webform-client-form {
     float: none;
     width: 100%; }
-
   td.fc-header-left, .fc-header-center, .fc-header-right {
     display: block;
     padding-bottom: 20px;
     float: none; }
-
   #content h1 {
     font-size: 3.8em; }
-
   #content .view-program-services .view-content {
     text-align: center; }
   #content .view-program-services .views-row {
     margin: 0px;
     margin-bottom: 20px; }
-
   #block-menu-menu-footer-menu {
     display: none; }
-
   #footer {
     background-position: calc(-1449px + 100px) -18px; }
-
   #ministry-logo {
     width: 300px; }
     #ministry-logo img {
       width: 100%; }
-
   #site-by {
     text-align: center; }
-
   .node-type-program-services h1 {
     text-align: left; } }
+
 @media screen and (max-width: 660px) {
   .view-program-sub-category .views-row {
     margin: 20px auto;
@@ -1568,34 +1599,27 @@ h3 {
     .view-program-sub-category .views-row .field-content div > span {
       font-size: 48px;
       min-width: 200px; }
-
   #text-resize {
+    right: 45px; }
+  #header-social {
     right: 10px; }
-
   #search-block-form {
-    margin-right: 34px; }
+    margin-right: 74px; }
     #search-block-form input {
-      width: 170px; }
-
+      width: 150px; }
   #site-by,
   #ministry-logo {
     padding: 5px 10px 0px; }
-
   #ministry-logo {
     margin-top: 32px; }
-
   #footer {
     padding: 20px 0px 30px; }
-
   #block-block-6 {
     width: 250px; }
-
   #header {
     background-position: calc(52%); }
-
   #search-block-form {
     top: 22px; }
-
   #logo a {
     text-align: center;
     padding-right: 20px;
@@ -1603,7 +1627,6 @@ h3 {
     margin: 0 auto; }
     #logo a object {
       width: 100%; }
-
   #block-views-banner-block {
     height: 350px; }
     #block-views-banner-block .views-field-body {
@@ -1617,10 +1640,8 @@ h3 {
       height: 350px; }
     #block-views-banner-block p {
       font-size: 1em; }
-
   #block-block-5 {
     margin: 20px 10px 20px; }
-
   .view-physicians .name-map,
   .view-physicians .phy-details, .view-accepting-new-patients .name-map,
   .view-accepting-new-patients .phy-details {

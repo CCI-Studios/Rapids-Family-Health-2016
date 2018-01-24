@@ -94,6 +94,9 @@
                     <?php print render($block_text['content']);
                    ?>
                    </div>
+                   <div id="header-social">
+                    <a href="https://www.facebook.com/rapidsfhteam/" target="_blank" class="fb">Facebook</a>
+                   </div>
 
                   
                   </div>
