@@ -1,12 +1,5 @@
 (function($) {
     $(function(){
-       
-       $('.view-physicians').each(function(index,value)
-       {
-            var count = index+1;
-         
-       });
-
         
         if($("#map1").length > 0)
         {
@@ -23,11 +16,16 @@
             createMap(42.8841223,-82.44875560000003,"#map3");
         }
 
+        if($("#map4").length > 0)
+        {
+            createMap(42.9815296,-82.4023039,"#map4");
+        }
+
     });
 
-    function createMap(x,y,z)
+    function createMap(lat, lng, container)
     {
-        var location = new google.maps.LatLng(x,y);
+        var location = new google.maps.LatLng(lat, lng);
         var mapOptions = {
             zoom: 17,
             center: location,
@@ -35,18 +33,14 @@
             scrollwheel: false,
         }
 
-        var styles = [
-                          
-                    ];
+        var styles = [];
 
-          google.maps.event.addDomListener(window, 'resize', function() {
+        google.maps.event.addDomListener(window, 'resize', function() {
             map.setCenter(location);
         });
         var image = '/sites/all/themes/rfht2/images/icons/map-marker-icon.png';
     
-        var map = new google.maps.Map($(z).get(0),
-                        mapOptions);
-        console.log(z);
+        var map = new google.maps.Map($(container).get(0), mapOptions);
         var marker = new google.maps.Marker({
             position: location,
             map: map,

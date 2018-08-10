@@ -54,7 +54,7 @@
   <script>try{Typekit.load({ async: true });}catch(e){}</script>
   <?php print $styles; ?>
   <?php print $scripts; ?>
-  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false&amp;key=AIzaSyCiYCe5GgXp62lu4DpcpUOA_3fjWGXCHY0"></script>
   
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>

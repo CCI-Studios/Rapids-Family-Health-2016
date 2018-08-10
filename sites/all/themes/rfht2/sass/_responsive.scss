@@ -514,9 +514,7 @@
 		padding-left: 0px;
 	}
 
-	#location1,
-	#location2,
-	#location3
+	.location
 	{
 		.inner-loc
 		{
@@ -525,7 +523,7 @@
 		}
 	}
 
-	#map1, #map2, #map3
+	.map
 	{
 		width:100%;
 		margin:15px 0px;

@@ -678,9 +678,7 @@ h3 {
   float: left;
   margin: 0px; }
 
-#location1,
-#location2,
-#location3 {
+.location {
   color: #9b9b9b;
   font-size: 22px;
   font-weight: normal;
@@ -690,31 +688,17 @@ h3 {
   padding: 0 0 20px;
   overflow: hidden;
   margin-bottom: 20px; }
-  #location1 h3,
-  #location2 h3,
-  #location3 h3 {
+  .location h3 {
     padding-bottom: 10px; }
-  #location1 .inner-loc,
-  #location2 .inner-loc,
-  #location3 .inner-loc {
+  .location .inner-loc {
     width: 30%;
     float: left; }
 
-#location1 .phone:before,
-#location1 .fax:before,
-#location1 .loc:before,
-#location1 .phy-help:before,
-#location1 .phy-accepting:before,
-#location2 .phone:before,
-#location2 .fax:before,
-#location2 .loc:before,
-#location2 .phy-help:before,
-#location2 .phy-accepting:before,
-#location3 .phone:before,
-#location3 .fax:before,
-#location3 .loc:before,
-#location3 .phy-help:before,
-#location3 .phy-accepting:before,
+.location .phone:before,
+.location .fax:before,
+.location .loc:before,
+.location .phy-help:before,
+.location .phy-accepting:before,
 .view-physicians .phone:before,
 .view-physicians .fax:before,
 .view-physicians .loc:before,
@@ -729,32 +713,22 @@ h3 {
   padding-right: 10px;
   padding-top: 5px; }
 
-#location1 .phy-accepting,
-#location2 .phy-accepting,
-#location3 .phy-accepting,
+.location .phy-accepting,
 .view-physicians .phy-accepting,
 .view-accepting-new-patients .phy-accepting {
   color: #e6811d;
   font-weight: bold; }
 
-#location1 .phone,
-#location1 .phy-accepting,
-#location2 .phone,
-#location2 .phy-accepting,
-#location3 .phone,
-#location3 .phy-accepting,
+.location .phone,
+.location .phy-accepting,
 .view-physicians .phone,
 .view-physicians .phy-accepting,
 .view-accepting-new-patients .phone,
 .view-accepting-new-patients .phy-accepting {
   clear: left; }
 
-#location1 .loc p,
-#location1 .phy-help p,
-#location2 .loc p,
-#location2 .phy-help p,
-#location3 .loc p,
-#location3 .phy-help p,
+.location .loc p,
+.location .phy-help p,
 .view-physicians .loc p,
 .view-physicians .phy-help p,
 .view-accepting-new-patients .loc p,
@@ -762,58 +736,42 @@ h3 {
   float: left;
   font-size: 22px; }
 
-#location1 .loc p,
-#location2 .loc p,
-#location3 .loc p,
+.location .loc p,
 .view-physicians .loc p,
 .view-accepting-new-patients .loc p {
   max-width: 200px; }
 
-#location1 .phone:before,
-#location2 .phone:before,
-#location3 .phone:before,
+.location .phone:before,
 .view-physicians .phone:before,
 .view-accepting-new-patients .phone:before {
   content: url(../images/icons/phone-icon1.png); }
 
-#location1 .fax:before,
-#location2 .fax:before,
-#location3 .fax:before,
+.location .fax:before,
 .view-physicians .fax:before,
 .view-accepting-new-patients .fax:before {
   content: url(../images/icons/fax-icon.png); }
 
-#location1 .loc:before,
-#location2 .loc:before,
-#location3 .loc:before,
+.location .loc:before,
 .view-physicians .loc:before,
 .view-accepting-new-patients .loc:before {
   content: url(../images/icons/marker-loc-icon.png); }
 
-#location1 .phy-help:before,
-#location2 .phy-help:before,
-#location3 .phy-help:before,
+.location .phy-help:before,
 .view-physicians .phy-help:before,
 .view-accepting-new-patients .phy-help:before {
   content: url(../images/icons/plus-sign-icon.png); }
 
-#location1 .phy-accepting:before,
-#location2 .phy-accepting:before,
-#location3 .phy-accepting:before,
+.location .phy-accepting:before,
 .view-physicians .phy-accepting:before,
 .view-accepting-new-patients .phy-accepting:before {
   content: url(../images/icons/new-patient-icon.png); }
 
-#location1 .phy-help,
-#location2 .phy-help,
-#location3 .phy-help,
+.location .phy-help,
 .view-physicians .phy-help,
 .view-accepting-new-patients .phy-help {
   padding-top: 10px; }
 
-#map1,
-#map2,
-#map3 {
+.map {
   float: right;
   width: 60%;
   height: 340px;
@@ -1553,12 +1511,10 @@ h3 {
     top: auto;
     padding-top: 30px;
     padding-left: 0px; }
-  #location1 .inner-loc,
-  #location2 .inner-loc,
-  #location3 .inner-loc {
+  .location .inner-loc {
     width: 100%;
     float: none; }
-  #map1, #map2, #map3 {
+  .map {
     width: 100%;
     margin: 15px 0px;
     float: none; }
